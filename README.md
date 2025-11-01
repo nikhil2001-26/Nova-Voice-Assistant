@@ -1,2 +1,46 @@
-# Nova-Voice-Assistant
-An AI-powered virtual voice assistant built in Python using SpeechRecognition, pyttsx3, and Perplexity API. Acts like Alexa or Google Assistant.
+# 🌟 Nova – AI Voice Assistant (Powered by Perplexity API)
+
+Nova is an intelligent **voice-based virtual assistant** built in Python that can listen to your commands, talk back using text-to-speech, perform web tasks, play music, and answer general questions using the **Perplexity AI API**.
+
+Nova works similar to Alexa or Google Assistant — it wakes up when you say “**Nova**”, listens to your command, and responds smartly through speech.
+
+---
+
+## 🚀 Features
+
+- 🎙️ **Voice Activation:** Say "Nova" to wake the assistant.  
+- 💬 **Smart Responses:** Uses Perplexity AI (sonar-pro model) for general questions.  
+- 🌐 **Web Control:** Opens websites like Google, YouTube, Gmail, and Facebook.  
+- 🎵 **Music Playback:** Plays songs from a custom Python `musicLibrary.py` file.  
+- 🗣️ **Text-to-Speech:** Speaks back responses using `pyttsx3`.  
+- 🎧 **Speech Recognition:** Understands voice commands using `SpeechRecognition`.
+
+---
+
+## 🧩 Project Structure
+Nova-Voice-Assistant/
+│
+├── client.py # Main program file
+├── musicLibrary.py # Local music links dictionary
+├── README.md # Project documentation
+├── requirements.txt # List of dependencies
+└── assets/ # (Optional) for any sound or image files
+
+If pyaudio fails on Windows:
+pip install pipwin
+pipwin install pyaudio
+
+
+Run the Assistant:
+python client.py
+
+Say “Nova” to wake the assistant, then try:
+“Open YouTube”
+“Play believer”
+“Who is Virat Kohli?”
+
+Requirements:
+speechrecognition
+pyttsx3
+requests
+pyaudio
