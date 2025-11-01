@@ -15,32 +15,5 @@ Nova works similar to Alexa or Google Assistant — it wakes up when you say “
 - 🗣️ **Text-to-Speech:** Speaks back responses using `pyttsx3`.  
 - 🎧 **Speech Recognition:** Understands voice commands using `SpeechRecognition`.
 
----
-
-## 🧩 Project Structure
-Nova-Voice-Assistant/
-│
-├── client.py # Main program file
-├── musicLibrary.py # Local music links dictionary
-├── README.md # Project documentation
-├── requirements.txt # List of dependencies
-└── assets/ # (Optional) for any sound or image files
-
-If pyaudio fails on Windows:
-pip install pipwin
-pipwin install pyaudio
 
 
-Run the Assistant:
-python client.py
-
-Say “Nova” to wake the assistant, then try:
-“Open YouTube”
-“Play believer”
-“Who is Virat Kohli?”
-
-Requirements:
-speechrecognition
-pyttsx3
-requests
-pyaudio
